@@ -1,4 +1,170 @@
 body
 {
-    background-color: lightslategrey;
+    background: url("images/koghi.png") no-repeat center fixed;
+    background-size: cover;
+    background-color: lightslategray;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+
+header, nav, footer, #presentation, #tarifs
+{
+    width: 75%;
+    margin: 15px auto;
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 10px;
+}
+
+/* Style header */
+nav
+{
+    margin-top: 10px;
+}
+
+
+header h1
+{
+    text-align: center;
+    font-family: Mali, cursive;
+    text-shadow: 0 0 5px green;
+}
+
+/* Style nav */
+nav ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li
+{
+    display: inline;
+}
+
+nav li a
+{
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    line-height: 30px;
+}
+
+nav li a:hover
+{
+    color: green;
+}
+
+/* Style footer */
+footer
+{
+    text-align: center;
+    font-family: Mali, cursive;
+    text-shadow: 0 0 5px green;
+}
+
+/* Style presentation */
+#presentation p
+{
+    padding: 15px;
+    column-count: 3;
+    text-align: justify;
+    font-family: Mali, cursive;
+}
+
+/* Style tarifs */
+
+#tarifs
+{
+    width:600px;
+}
+
+#tarifs table
+{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+#tarifs table thead
+{
+    background-color: rgba(0,0,175,.25);
+}
+
+#tarifs table thead th
+{
+    height: 44px;
+    padding: 10px;
+    margin: 0px;
+    font-size: 14px
+}
+
+#tarifs table tr td
+{
+    height: 40px;
+    border-bottom: 1px solid grey
+}
+
+.coche, .croix
+{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.coche
+{
+    background: url("images/css_sprites.png") -10px -10px;
+}
+
+.croix
+{
+    background: url("images/css_sprites.png") -80px -10px;
+}
+
+/* Style slide */
+.slider
+{
+    position: relative;
+    width: 800px;
+    height: 350px;
+    margin: 10px auto 0 auto;
+    overflow: hidden;
+}
+
+.slider ul
+{
+    position: absolute;
+    padding: 0;
+    list-style-type: none;
+    width: 300%;
+    animation: AutoSlide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.slider ul li
+{
+    display: inline;
+}
+
+@keyframes AutoSlide
+{
+    0%, 15%, 100%
+    {
+        left: 0px; /* 1ère image */
+    }
+    35%,50%
+    {
+        left:-100%; /* 2ème image */
+    }
+    70%,85%
+    {
+        left: -200%; /* 3ème image */
+    }
 }
