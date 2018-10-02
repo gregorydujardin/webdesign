@@ -6,7 +6,12 @@ body
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
 }
 
-header, nav, footer, #presentation, #tarifs
+html
+{ 
+    scroll-behavior: smooth;
+}
+
+header, nav, footer, #presentation, #tarifs, #nousTrouver
 {
     width: 75%;
     margin: 15px auto;
@@ -72,6 +77,22 @@ footer
     text-align: justify;
     font-family: Mali, cursive;
 }
+
+/* Style nousTrouver */
+#nousTrouver
+{
+    height: 500px;
+}
+
+#nousTrouver iframe
+{
+    width: 100%;
+    height: 100%;
+    display: block ;
+    margin: 5px auto;
+    frameborder: 0px;
+}
+
 
 /* Style tarifs */
 
@@ -168,3 +189,134 @@ footer
         left: -200%; /* 3ème image */
     }
 }
+
+/* Styles top */
+#backtotop {
+    position: fixed;
+    bottom: 20px;
+    right: 250px;
+}
+
+#backtotop:hover
+{
+    background-color: brown;
+    border-radius: 5px;
+}
+
+
+/* Style the navigation menu */
+.topnav {
+    display: none;
+    overflow: hidden;
+    background-color: green;
+    position: relative;
+
+  }
+
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: url("images/menu.png") no-repeat;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 32px;
+    height: 32px;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+@media only screen and (max-device-width:500px)
+{
+
+    .topnav {
+        display: block;
+    }
+
+    header, nav
+    {
+        display: none;
+    }
+
+    
+    header, nav, footer, #presentation, #tarifs, #nousTrouver
+    {
+        width: 95%;
+    }
+
+    nav li
+    {
+        font-size: 35px;
+    }
+
+    #presentation p
+    {
+        column-count:1; 
+    }
+
+    #tarifs
+    {
+        width:95%;
+    }
+
+    #tarifs table
+    {
+        width: 100%;
+    }
+
+    #tarifs table thead th
+    {
+        font-size: 30px
+    }
+
+    #tarifs table tr td
+    {
+        font-size: 25px;
+    }
+
+    #backtotop {
+        right: 50px;
+    }
+
+    #footer
+    {
+        font-size: 15px;
+    }
+
+    #backtotop {
+        height: 80px;
+        width: 80px;
+    }
+
+    #backtotop a img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+

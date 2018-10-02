@@ -2,13 +2,15 @@
 
 <html lang="fr">
     <head>
-        <meta charset="utf8">
+        <meta charset="utf-8">
         <title>Vel'Aventure</title>
         <link rel="stylesheet" href="base.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
     </head>
     <body>
+
+        <section id="top"></section>
         <header>
             <!-- Nom du site -->
             <h1>Vel'Aventure</h1>
@@ -20,6 +22,30 @@
                 <li><a href="#tarifs">Tarifs</a></li>
             </ul>
         </nav>
+
+        <div class="topnav">
+            <a href="#home" class="active">Vel'Aventure</a>
+            <div id="myLinks">
+                <a href="#presentation">Présentation</a>
+                <a href="#nousTrouver">Nous trouver</a>
+                <a href="#tarifs">Tarifs</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <script>function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                }
+        </script>
+    
         <section class="slider">
             <ul>
                 <li><img src="images/rivière.jpg" alt="Image de rivère"/></li><!--
@@ -41,50 +67,59 @@
             </p>
         </section>
         <section id="nousTrouver">
-            <!-- Nous trouver -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59114.459164439446!2d166.498663!3d-22.1772504!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6c2806e16e99b9e3%3A0xc8e8946d4d798893!2sAuberge+du+Mont+Koghi!5e0!3m2!1sfr!2s!4v1538314570272" style="border:0" allowfullscreen></iframe>
         </section>
         <section id="tarifs">
             <table>
                 <thead>
-                    <th>Pack</th>
-                    <th>Promenade</th>
-                    <th>Découverte</th>
-                    <th>Randonnée</th>
+                    <tr>
+                        <th>Pack</th>
+                        <th>Promenade</th>
+                        <th>Découverte</th>
+                        <th>Randonnée</th>
+                    </tr>
                 </thead>
-                <tr>
-                    <td>Rendez-vous à l'auberge du Koghi</td>
-                    <td><span class="coche"/></td>
-                    <td><span class="coche"/></td>
-                    <td><span class="coche"/></td>
-                </tr>
-                <tr>
-                    <td>Equipement fourni</td>
-                    <td><span class="coche"/></td>
-                    <td><span class="coche"/></td>
-                    <td><span class="coche"/></td>
-                </tr>
-                <tr>
-                    <td>Durée</td>
-                    <td>1 heure</td>
-                    <td>3 heures</td>
-                    <td>6 heures</td>
-                </tr>
-                <tr>
-                    <td>Déjeuner compris</td>
-                    <td><span class="croix"/></td>
-                    <td><span class="croix"/></td>
-                    <td><span class="coche"/></td>
-                </tr>
-                <thead>
-                    <th>Tarif par personne</th>
-                    <th>8 600 XPF</th>
-                    <th>12 800 XPF</th>
-                    <th>15 300 XPF</th>
-                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rendez-vous à l'auberge du Koghi</td>
+                        <td><span class="coche"></span></td>
+                        <td><span class="coche"></span></td>
+                        <td><span class="coche"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Equipement fourni</td>
+                        <td><span class="coche"></span></td>
+                        <td><span class="coche"></span></td>
+                        <td><span class="coche"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Durée</td>
+                        <td>1 heure</td>
+                        <td>3 heures</td>
+                        <td>6 heures</td>
+                    </tr>
+                    <tr>
+                        <td>Déjeuner compris</td>
+                        <td><span class="croix"></span></td>
+                        <td><span class="croix"></span></td>
+                        <td><span class="coche"></span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Tarif par personne</th>
+                        <th>8 600 XPF</th>
+                        <th>12 800 XPF</th>
+                        <th>15 300 XPF</th>
+                    </tr>
+                </tfoot>
             </table>
         </section>
         <footer>
             ©Greg - 2018
         </footer>
+        <section id="backtotop">
+            <a href="#top"><img src="images/top.png" alt=""></a>
+        </section>
     </body>
 </html>
