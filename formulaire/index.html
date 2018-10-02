@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+    </head>
+    <body>
+        <form>
+            <fieldset><h1>Création de compte</h1></fieldset>
+            <fieldset><legend>Identité</legend>
+                <p><label>Nom : </label><input type="text" name="nom"></p>
+                <p><label>Prénom : </label><input type="text" name="prenom"></p>
+                <p><label>Sexe : </label><input type="radio" name="sexe" value="FEMME" title="Femme" class="radiobutton"><label>Femme</label></p>
+                <p><label></label><input type="radio" name="sexe" value="HOMME" title="Homme" class="radiobutton"><label>Homme</label></p>
+                <p><label>Adresse mail : </label><input type="email" name="email"></p>
+                <p><label>Pseudo : </label><input type="text" name="pseudo"></p>
+            </fieldset>
+            <fieldset><legend>Adresse</legend>
+                <p><label>Adresse : </label><textarea rows="4" name="adresse"></textarea></p>
+                <p><label>Code postal : </label><input type="number" name="codePostal"></p>
+                <p><label>Ville : </label>
+                <select>
+                    <option value="Nouméa">Nouméa</option>
+                    <option value="Païta">Païta</option>
+                    <option value="Dumbéa">Dumbéa</option>
+                    <option value="Mont-Dore">Mont-Dore</option>
+                </select></p>
+                <p><label>Téléphone : </label><input type="tel" name="telephone"></p>
+            </fieldset>
+            <fieldset><legend>Mot de passe</legend>
+                <p><label>Mot de passe : </label><input type="password" name="motDePasse"></p>
+                <p><label>Confirmation : </label><input type="password" name="confirmation"></p>
+            </fieldset>
+            <input type="submit" value="S'inscrire" class="inputbutton">
+            <p><input type="checkbox" name="newsletter"><label class="label-newsletter">Je souhaite m'inscrire à la newsletter.</label></p>
+        </form>
+    </body>
+</html>

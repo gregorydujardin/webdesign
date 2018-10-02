@@ -1,0 +1,88 @@
+body {
+    background: url("images/bck.png") no-repeat center fixed;
+    background-size: cover;
+    background-color: lightslategray;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+
+
+form {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+fieldset {
+    margin: 15px auto;
+	border:1px solid #999;
+	border-radius:8px;
+    box-shadow:0 0 10px #999;
+    background-color: rgba(255,255,255,0.5);
+}
+
+legend, fieldset p label, fieldset p input, option, select, .inputbutton, .label-newsletter, h1 {
+    font-family: Mali, cursive;
+    font-size: 14px
+}
+
+legend {
+    padding: 5px 10px;
+    background:rgba(255,255,255,0.75);
+    border:1px solid #999;
+    box-shadow:0 0 10px #999;
+    border-radius: 5px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+fieldset p label, fieldset p input {
+    display: inline-block;
+}
+
+fieldset p label {
+    width: 15%;
+    min-width: 105px;
+    vertical-align: top;
+}
+
+fieldset p input, fieldset p select, fieldset p textarea {
+    width: 80%;
+}
+
+.radiobutton {
+    width: 20px;
+}
+
+.inputbutton {
+    display: block;
+    width: 20%;
+    margin: 20px auto;
+	border-radius:8px;
+    box-shadow:0 0 10px #999;
+}
+
+.label-newsletter {
+    color: #fff;
+}
+
+
+@media only screen and (max-device-width:500px)
+{
+  
+    form
+    {
+        width: 95%;
+    }
+
+    legend, fieldset p label, fieldset p input, option, select, .inputbutton, .label-newsletter, h1 {
+        font-size: 35px
+    }
+}

@@ -1,0 +1,167 @@
+/* base font-size correspnd à 10px et est adapté à l'unité rem */
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    background-color: #fff;
+    color: #000;
+    font-family: "Century Gothic", Helvetica, arial sans-serif;
+    font-size: 1.4em; /* équivalent à 14px */
+    line-height: 1.5; /*A adapter à votre design */
+}
+
+/* Contenus */
+p, ul, ol, td, th, textarea, caption
+{
+    font-size: 1em; /* équivalent à 10px */
+    line-height: 1.5;
+    margin: 1.5em 0 0;
+}
+
+h1
+{
+    font-size: 1.8571em; /* équivaut à 26px */
+    font-weight: normal;
+    line-height: 1.6154em;
+    margin: .8077em 0 0 0;
+}
+
+h2
+{
+    font-size: 1.7143em; /* équivaut à 24px */
+    font-weight: normal;
+    line-height: 1.75em;
+    margin: .875em 0 0 0;
+}
+
+h3
+{
+    font-size: 1.5714em; /* équivaut à 22px */
+    font-weight: normal;
+    line-height: 1.909em;
+    margin: .9545em 0 0 0;
+}
+
+h4
+{
+    font-size: 1.4286em; /* équivaut à 20px */
+    font-weight: normal;
+    line-height: 1.05em;
+    margin: 1.05em 0 0 0;
+}
+
+h5
+{
+    font-size: 1.2857em; /* équivaut à 18px */
+    font-weight: normal;
+    line-height: 1.1667em;
+    margin: 1.1667em 0 0 0;
+}
+
+h6
+{
+    font-size: 1.1429em; /* équivaut à 16px */
+    font-weight: normal;
+    line-height: 1.3125em;
+    margin: 1.3125em 0 0 0;
+}
+
+/* Polices intermédiaires */
+.smaller
+{
+    font-size: .7143em; /* équivaut à 10px */ 
+    line-height: 2.1em;
+}
+
+.small
+{
+    font-size: .8571em; /* équivaut à 12px */ 
+    line-height: 1.75em;
+}
+
+.big
+{
+    font-size: 1.1429em; /* équivaut à 16px */ 
+    line-height: 1.3125em;
+}
+
+.bigger
+{
+    font-size: 1.2857em; /* équivaut à 18px */ 
+    line-height: 1.1667em;
+}
+
+.biggest
+{
+    font-size: 1.4286em; /* équivaut à 20px */ 
+    line-height: 1.05em;
+}
+
+/* soft reset */
+html, body, textarea, figure, label
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol
+{
+    padding-left: 2em;
+}
+
+table
+{
+    margin-bottom: 1.5em;
+}
+
+/* Enlever le margin sur le premier élément */
+p:first-child, ul:first-child, ol:first-child, h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child
+{
+    margin-top: 0;
+}
+
+/* enlever le margin sur les éléments enfants */
+li p, li ul, li ol
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Balises HTML5 */
+article, aside, details, figcaption, figure, footer, header, hgfroup, nav, section
+{
+    display: block;
+}
+
+/* Valeurs maximales */
+img, table, td, blockquote, code, pre, textarea, input, video
+{
+    max-width: 100%;
+}
+
+/* Gestion des coupures de mots et des traits d'union */
+div, textarea, table, td, tg
+{
+    word-wrap: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+}
+
+/* pictures */
+img
+{
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+a img
+{
+    border: 0;
+}
