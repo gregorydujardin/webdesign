@@ -1,0 +1,41 @@
+#animate {
+    animation: 3s infinite alternate slideIn;
+    position: relative;
+}
+
+@keyframes slideIn
+{
+    0% {
+        width: 300%;
+        margin-left:100%;
+    }
+    75% {
+        font-size: 300%;
+        width: 150%;
+        margin-left: 25%;
+        background-color: red;
+    }
+    100% {
+        width: 100%;
+        margin-left:0%;
+    }
+}
+
+.box {
+    display: block;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    color: #0000FF;
+    border-radius: 0px;
+    transition: width 2s, height 2s, background-color 2s, transform 1s, border-radius 2s;
+}
+
+.box:hover {
+    width: 200px;
+    height: 200px;
+    background-color: #FFCCCC;
+    border-radius: 30px;
+    transform: rotate(360deg);
+}
